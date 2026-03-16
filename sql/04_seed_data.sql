@@ -1,0 +1,35 @@
+CALL insert_hospital("Connolly Hospital", "Waterville, Blanchardstown, Dublin 15", '016465000');
+CALL insert_hospital("Beaumont Hospital", "Dublin 9", '018387111');
+CALL insert_hospital("University Hospital Limerick", "Dooradoyle, Limerick", '061301000');
+CALL insert_hospital("Cork University Hospital", "Wilton, Cork", '0214924200');
+CALL insert_hospital("St. James's Hospital", "James's St, Dublin 8", '014162000');
+CALL insert_hospital("Espoon Sairaala", "Sairaalantie 1, Espoo", '0901234567');
+CALL insert_hospital("Mäntsälän Terveyskeskus", "Keskustie 5, Mäntsälä", '019123456');
+CALL insert_hospital("Helsingin Meilahden Sairaala", "Meilahdentie 2, Helsinki", '0912345678');
+CALL insert_hospital("Tampereen Keskussairaala", "Teiskontie 35, Tampere", '031234567');
+CALL insert_hospital("Turun Yliopistollinen Sairaala", "Kiinamyllynkatu 4, Turku", '021234567');
+
+CALL insert_candidate('John','Doe','Example Street, Dunshaughlin','0800000001','john.doe@example.com');
+CALL insert_candidate('Jane','Doe','Sample Road, Dunshaughlin','0800000002',NULL);
+CALL insert_candidate('Jack','Doe','Oak Avenue, Dunshaughlin','0800000003','jack.doe@example.com');
+CALL insert_candidate('James','Doe','Maple Drive, Dunshaughlin','0800000004',NULL);
+CALL insert_candidate('Alex','Smith','Example Square, Blanchardstown, Dublin 15','0800000005','alex.smith@example.com');
+CALL insert_candidate('Chris','Taylor','Sample Lane, Waterford',NULL,'chris.taylor@example.com');
+CALL insert_candidate('Sam','Brown','Example Gardens, Blanchardstown, Dublin 15','0800000007',NULL);
+CALL insert_candidate('Anna','Virtanen','Example Street, Helsinki','0800000008',NULL);
+CALL insert_candidate('Leo','Korhonen','Sample Road, Espoo','0800000009','leo.korhonen@example.com');
+CALL insert_candidate('Mika','Niemi','Oak Avenue, Tampere','0800000010',NULL);
+CALL insert_candidate('David','Lopez','Maple Drive, Helsinki','0800000011','david.lopez@example.com');
+CALL insert_candidate('Tom','Laine','Example Street, Oulu','0800000012',NULL);
+CALL insert_candidate('Ali','Khan','Sample Road, Stockholm','0800000013','ali.khan@example.com');
+
+CALL insert_skill('Nursing');
+CALL insert_skill('Cardiology');
+CALL insert_skill('Pharmacy');
+CALL insert_skill('Emergency Care');
+CALL insert_skill('Administration');
+CALL insert_skill('Radiology');
+CALL insert_skill('Surgery');
+CALL insert_skill('IT');
+CALL insert_skill('Physiotherapy');
+CALL insert_skill('Management');
