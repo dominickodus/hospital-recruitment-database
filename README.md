@@ -4,6 +4,7 @@ A relational database system designed to manage hospital recruitment across Irel
 
 Note: This project is associated with University College Dublin
 
+An in-depth explanation of the implementation can be found in docs/doc.pdf
 ## Features
 
 - 7-table relational schema
