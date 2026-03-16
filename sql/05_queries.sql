@@ -1,6 +1,6 @@
 DELIMITER $$
 
-CREATE PROCEDURE Q1_FindHospitalsByID(
+CREATE PROCEDURE FindHospitalsByID(
     IN p_hospital_id INT
 )
 BEGIN
@@ -9,7 +9,7 @@ BEGIN
 END$$
 
 
-CREATE PROCEDURE Q2_FindHospitalsByName(
+CREATE PROCEDURE FindHospitalsByName(
     IN p_name VARCHAR(100)
 )
 BEGIN
@@ -19,7 +19,7 @@ BEGIN
 END$$
 
 
-CREATE PROCEDURE Q3_FindCandidatesBySurname(
+CREATE PROCEDURE FindCandidatesBySurname(
     IN p_surname VARCHAR(50)
 )
 BEGIN
@@ -28,7 +28,7 @@ BEGIN
 END$$
 
 
-CREATE PROCEDURE Q4_FindCandidatesWithSkillMatchingPosition(
+CREATE PROCEDURE FindCandidatesWithSkillMatchingPosition(
     IN p_position_id INT
 )
 BEGIN
@@ -40,7 +40,7 @@ BEGIN
 END$$
 
 
-CREATE PROCEDURE Q5_CountCandidatesWithOffers()
+CREATE PROCEDURE CountCandidatesWithOffers()
 BEGIN
     SELECT COUNT(DISTINCT candidate_id) AS num_offers
     FROM Interview 
@@ -48,7 +48,7 @@ BEGIN
 END$$
 
 
-CREATE PROCEDURE Q6_FindPositionsRequiringSkill(
+CREATE PROCEDURE FindPositionsRequiringSkill(
     IN p_skill_name VARCHAR(50)
 )
 BEGIN
@@ -60,7 +60,7 @@ BEGIN
 END$$
 
 
-CREATE PROCEDURE Q7_CountPositionsRequiringNursing()
+CREATE PROCEDURE CountPositionsRequiringNursing()
 BEGIN
     SELECT COUNT(*) AS num_requiringNursing
     FROM JobPosition JP, Position_Skill PS, Skill S
@@ -70,7 +70,7 @@ BEGIN
 END$$
 
 
-CREATE PROCEDURE Q8_FindAdvertisedPositionsPerHospital()
+CREATE PROCEDURE FindAdvertisedPositionsPerHospital()
 BEGIN
     SELECT JP.*, H.name AS Hospital
     FROM JobPosition JP, Hospital H
@@ -79,7 +79,7 @@ BEGIN
 END$$
 
 
-CREATE PROCEDURE Q9_FindInterviewsByDate(
+CREATE PROCEDURE FindInterviewsByDate(
     IN p_interview_date DATE
 )
 BEGIN
@@ -93,7 +93,7 @@ BEGIN
 END$$
 
 
-CREATE PROCEDURE Q10_FindCandidatesInterviewedOnlyOnDate(
+CREATE PROCEDURE FindCandidatesInterviewedOnlyOnDate(
     IN p_interview_date DATE
 )
 BEGIN
@@ -109,7 +109,7 @@ BEGIN
 END$$
 
 
-CREATE PROCEDURE Q11_FindCandidatesWithMultipleInterviews()
+CREATE PROCEDURE FindCandidatesWithMultipleInterviews()
 BEGIN
     SELECT C.candidate_id, C.first_name, C.surname, COUNT(*) AS num_interviews
     FROM Candidate C, Interview I
