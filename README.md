@@ -2,6 +2,8 @@
 
 A relational database system designed to manage hospital recruitment across Ireland and Finland.
 
+Note: This project is associated with University College Dublin
+
 ## Features
 
 - 7-table relational schema
