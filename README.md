@@ -1,4 +1,4 @@
-# Irish and Finnish Hospital Recruitment Database
+# Hospital Recruitment Database
 
 A relational database system designed to manage hospital recruitment across Ireland and Finland.
 
